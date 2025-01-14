@@ -10,7 +10,7 @@ Nota:
 Non è necessario provvedere alla validazione delle email
 */
 
-/*let arrayInvitati = [
+let arrayInvitati = [
     "pepe.21@gmail.com",
     "cristian.sanna@gmail.com",
     "drevi.murru@gmail.com",
@@ -44,7 +44,7 @@ if(isEmailValid == true){
 else{
     console.log("Siamo spiacenti, la tua e-mail non è valida");
 }
-*/
+
 
 
 
