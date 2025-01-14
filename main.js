@@ -10,7 +10,7 @@ Nota:
 Non è necessario provvedere alla validazione delle email
 */
 
-let arrayInvitati = [
+/*let arrayInvitati = [
     "pepe.21@gmail.com",
     "cristian.sanna@gmail.com",
     "drevi.murru@gmail.com",
@@ -44,6 +44,29 @@ if(isEmailValid == true){
 else{
     console.log("Siamo spiacenti, la tua e-mail non è valida");
 }
+*/
 
 
 
+/*Gioco dei dadi
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+Prima di partire a scrivere codice poniamoci qualche domanda:
+Che ci sia un array da qualche parte?
+Se dobbiamo confrontare qualcosa che "cosa" ci serve?
+*/
+
+//DICHIARIAMO LE VARIABILI CHE CONTERRANNO IL VALORE DEL GIOCATORE E DEL COMPUTER
+let numeroGiocatore =  Math.floor(Math.random() * 6) + 1; //.random genera un numero tra 0 e 1 (escluso)... *6 moltiplica il numero e floor lo arrotonda per difetto a 5. 
+let numeroComputer =  Math.floor(Math.random() * 6) + 1; // Ne consegue che il +1 serve per creare intervallo 1-6.
+console.log(`ecco il numero del giocatore: ${numeroGiocatore}`)
+console.log(`ecco il numero del computer: ${numeroComputer}`)
+if(numeroGiocatore > numeroComputer){
+    console.log(`il Giocatore ha vinto perche: ${numeroGiocatore} è piu grande di: ${numeroComputer}`);
+}
+else if(numeroGiocatore == numeroComputer){
+    console.log(`Pareggio! perchè: ${numeroComputer} è uguale a: ${numeroGiocatore}`);
+}
+else{
+    console.log(`il Computer ha vinto perche ${numeroComputer} è piu grande di ${numeroGiocatore}`);
+}
