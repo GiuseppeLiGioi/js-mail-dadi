@@ -10,15 +10,25 @@ Nota:
 Non è necessario provvedere alla validazione delle email
 */
 
-let arrayInvitati = ["pepe@example.com" , "sara@example.com" , "drevi@example.com" , "cristian@example.com" , "edoardo@example.com"]; //creazione del mio array degli invitati
-let isEmailValid = false;
+let arrayInvitati = [
+    "pepe.21@gmail.com",
+    "cristian.sanna@gmail.com",
+    "drevi.murru@gmail.com",
+    "edoardo.14@gmail.com",
+    "sara.dex@gmail.com"
+  ]; //creazione del mio array degli invitati
+  
+
+
 let mailUtente = prompt("inserisci la tua e-mail");
-console.log(mailUtente); //chiedo all'utente di inserire la sua e-mail.
+let isEmailValid = false;
+//chiedo all'utente di inserire la sua e-mail.
 
 //a questo punto facciamo un ciclo for, dove al suo interno mettiamo la condizione per capire se la sua e-mail è valida: TRUE. Oppure non valida: FALSE.
-for(let i=0; i<arrayInvitati.length; i++){
-    if(arrayInvitati[i]===mailUtente){
+for(let i=0; i < arrayInvitati.length; i++){
+    if(arrayInvitati[i] === mailUtente){
         isEmailValid=true;
+        break; //con il break, se trova la e-mail esce dal ciclo.  //senza il break non visualizza il risultato corretto.
 
     }
     else{
@@ -28,11 +38,12 @@ for(let i=0; i<arrayInvitati.length; i++){
 }
 console.log(isEmailValid);
 
-if(isEmailValid==true){
+if(isEmailValid == true){
     console.log("complimenti, la tua e-mail è valida");
 }
 else{
-    console.log("la tua e-mail non è valida");
+    console.log("Siamo spiacenti, la tua e-mail non è valida");
 }
+
 
 
