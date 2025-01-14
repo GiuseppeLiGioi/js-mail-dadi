@@ -10,9 +10,10 @@ Nota:
 Non è necessario provvedere alla validazione delle email
 */
 
-let arrayInvitati = ["pepe@gmail.com" , "sara@gmail.com" , "drevi@gmail.com" , "cristian@gmail.com" , "edoardo@gmail.com"]; //creazione del mio array degli invitati
+let arrayInvitati = ["pepe@example.com" , "sara@example.com" , "drevi@example.com" , "cristian@example.com" , "edoardo@example.com"]; //creazione del mio array degli invitati
 let isEmailValid = false;
-let mailUtente = console.log(prompt("inserisci la tua e-mail")); //chiedo all'utente di inserire la sua e-mail.
+let mailUtente = prompt("inserisci la tua e-mail");
+console.log(mailUtente); //chiedo all'utente di inserire la sua e-mail.
 
 //a questo punto facciamo un ciclo for, dove al suo interno mettiamo la condizione per capire se la sua e-mail è valida: TRUE. Oppure non valida: FALSE.
 for(let i=0; i<arrayInvitati.length; i++){
@@ -26,5 +27,12 @@ for(let i=0; i<arrayInvitati.length; i++){
     }
 }
 console.log(isEmailValid);
+
+if(isEmailValid==true){
+    console.log("complimenti, la tua e-mail è valida");
+}
+else{
+    console.log("la tua e-mail non è valida");
+}
 
 
